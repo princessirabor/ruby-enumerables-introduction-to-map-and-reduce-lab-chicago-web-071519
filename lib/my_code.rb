@@ -33,3 +33,11 @@ def reduce_to_total(source_array, starting_point = 0 )
   total
 end
 
+def reduce_to_all_true(source_array)
+  truthy_found = true 
+  source_array.length.times do |index|
+    source_array[index]
+  end
+  total
+end
+
