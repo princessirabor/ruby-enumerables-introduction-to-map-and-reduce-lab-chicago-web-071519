@@ -44,11 +44,11 @@ def reduce_to_all_true(source_array)
   truthy_found
 end
 
-def reduce_to_all_true(source_array)
-  truthy_found = true 
+def reduce_to_any_true(source_array)
+  truthy_found = false 
   source_array.length.times do |index|
-    if !source_array[index]
-      truthy_found = false
+    if source_array[index]
+      return truthy_found
     end
       
   end
