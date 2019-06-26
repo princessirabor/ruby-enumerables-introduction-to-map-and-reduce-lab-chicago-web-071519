@@ -36,7 +36,10 @@ end
 def reduce_to_all_true(source_array)
   truthy_found = true 
   source_array.length.times do |index|
-    source_array[index]
+    if !source_array[index]
+      trut
+    end
+      
   end
   total
 end
