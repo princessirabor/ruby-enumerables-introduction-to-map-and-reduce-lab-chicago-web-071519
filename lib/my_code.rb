@@ -48,6 +48,7 @@ def reduce_to_any_true(source_array)
   truthy_found = false 
   source_array.length.times do |index|
     if source_array[index]
+      truthy_found = true
       return truthy_found
     end
       
